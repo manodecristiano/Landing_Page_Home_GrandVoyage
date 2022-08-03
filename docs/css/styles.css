@@ -50,7 +50,7 @@ body {
     left: 0;
     width: 100%;
     height: 44%;
-    background-image: linear-gradient(180deg, #27262616 0%, #00000029 100%), url('../images/fondo_carrusel_1.png');
+    background-image: linear-gradient(180deg, #27262616 0%, #000000c8 100%), url('../images/fondo_carrusel_1.png');
     background-size: cover;
     z-index: -1;
 }
@@ -73,7 +73,7 @@ body {
 
 .nav__logo {
     margin-left: 6%;
-    margin-top: 2%;
+    margin-top: 1%;
 }
 
 .nav__logo__img {
@@ -231,7 +231,9 @@ body {
 
 /*POPULAR*/
 
-.popular {}
+.popular {
+    background-color: beige;
+}
 
 .populare__container {
     display: grid;
@@ -606,7 +608,7 @@ body {
 
     .cta i {
         display: flex-inline;
-        margin-left: 55px;
+        margin-left: 36px;
 
     }
 
