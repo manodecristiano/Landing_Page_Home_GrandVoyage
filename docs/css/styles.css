@@ -21,7 +21,7 @@ body {
 
 .container {
     width: 100%;
-    max-width: 1200px;
+
     margin: 0 auto;
     overflow: hidden;
     padding: var(--padding-custom_property);
@@ -59,16 +59,21 @@ body {
 
 .nav {
     --padding-custom_property: 0;
-    background-color: red;
+
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
-    margin-left: 5%;
+
 }
 
 .nav__title {
     font-weight: 300;
+}
+
+.nav__logo {
+    margin-left: 6%;
+    margin-top: 2%;
 }
 
 .nav__logo__img {
@@ -80,12 +85,14 @@ body {
 }
 
 .nav__link {
-    margin-left: 30%;
+    margin-left: 45%;
     padding: 0;
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: max-content;
     gap: 2em;
+    font-size: 2rem;
+
 }
 
 .nav__links {
@@ -93,14 +100,11 @@ body {
     text-decoration: none;
 }
 
-.nav__img {
-    display: block;
-    width: 30px;
-}
+
 
 .nav__menu {
-
-    margin-left: 45px;
+    margin-right: 5%;
+    width: 9%;
     cursor: pointer;
     display: none;
 }
@@ -170,22 +174,27 @@ body {
 /*ABOUT*/
 .about {
     text-align: center;
+    justify-content: center;
 }
 
 .about__main {
     padding-top: 50px;
-    display: grid;
+    display: flex;
     width: 100%;
     margin: 0 auto;
     margin-top: 10px;
     overflow: hidden;
     /*Hace columnas que se ajustan según el tamaño sin mediaqueris*/
-    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    /*grid-template-columns: repeat(align-items, minmax(300px, auto));*/
+    grid-auto-flow: row dense;
 
 }
 
 .about__text {
+    margin-top: 5%;
+    ;
     font-family: 'DM';
+    font-size: 2rem;
 }
 
 .about__title {
@@ -193,7 +202,7 @@ body {
 }
 
 .about__paragrahp {
-    line-height: 1.3;
+    font-size: 1.5rem;
     color: darkgrey;
     margin-left: 20%;
     margin-right: 20%;
@@ -204,6 +213,7 @@ body {
     font-size: 2rem;
     margin-bottom: 25px;
 }
+
 
 
 .about__article {
@@ -557,12 +567,12 @@ body {
 @media (max-width:600px) {
 
     .nav__logo__img {
-        margin-left: 5%;
-        width: 30%;
+        margin-left: 2%;
+        width: 40%;
     }
 
     .hero::before {
-        height: 75%;
+        height: 78%;
         background-position: 70% 100%;
     }
 
@@ -610,13 +620,19 @@ body {
     }
 
     .about__article {
-        display: flex
+        display: flex;
+        grid-auto-flow: column;
     }
 
     .about__text {
         margin-top: 35px;
         padding: 25px 25px 31px 25px;
         text-align: left;
+    }
+
+    #reverse {
+        display: flex;
+        flex-direction: row-reverse;
     }
 
     .about__img {
@@ -715,7 +731,7 @@ body {
             position: fixed;
             background-color: #000;
             top: 0;
-            left: 0;
+            margin-left: 0%;
             height: 100%;
             width: 100%;
             display: flex;
