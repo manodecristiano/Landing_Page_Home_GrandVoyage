@@ -35,12 +35,9 @@ body {
     max-height: 450px;
     /* position: relative;*/
     display: grid;
-
     /*2 filas una de 100px y la otra de lo que sobre*/
     grid-template-rows: 100px 1fr;
 }
-
-
 
 .hero::before {
     content: "";
@@ -53,15 +50,12 @@ body {
 }
 
 /*NAV*/
-
 .nav {
     --padding-custom_property: 0;
-
     width: 100%;
     height: 71%;
     display: flex;
     align-items: center;
-
 }
 
 .nav__title {
@@ -69,7 +63,6 @@ body {
 }
 
 .nav__logo {
-
     margin-left: 6%;
     margin-top: 1px;
 }
@@ -90,15 +83,12 @@ body {
     grid-auto-columns: max-content;
     gap: 2em;
     font-size: 1rem;
-
 }
 
 .nav__links {
     color: white;
     text-decoration: none;
 }
-
-
 
 .nav__menu {
     margin-right: 5%;
@@ -147,7 +137,6 @@ body {
     width: 33%;
     height: 50%;
     justify-items: center;
-
 }
 
 .cta a {
@@ -167,6 +156,7 @@ body {
 }
 
 
+
 /*ABOUT*/
 .about {
     text-align: center;
@@ -174,7 +164,6 @@ body {
 }
 
 .about__main {
-
     display: flex;
     width: 100%;
     margin: 0 auto;
@@ -182,7 +171,6 @@ body {
     /*Hace columnas que se ajustan según el tamaño sin mediaqueris*/
     /*grid-template-columns: repeat(align-items, minmax(300px, auto));*/
     grid-auto-flow: row dense;
-
 }
 
 .about__table {
@@ -190,11 +178,9 @@ body {
     gap: 2.5em;
     justify-content: space-evenly;
     align-items: center;
-
     /*adaptables sin usare mediaqueri*/
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .about__element {
@@ -202,7 +188,6 @@ body {
     text-align: center;
     border-radius: 10px;
     width: 300px;
-
 }
 
 .about__text {
@@ -218,16 +203,13 @@ body {
 .about__paragrahp {
     font-size: 0.7rem;
     color: darkgrey;
-
 }
 
 .about__element__reverse {
-
     display: flex;
     text-align: center;
     border-radius: 10px;
     width: 300px;
-
 }
 
 .about__text__reverse {
@@ -239,13 +221,11 @@ body {
     font-size: 1rem;
 }
 
-
 .about__img {
     width: 200px;
 }
 
 /*POPULAR*/
-
 .popular {
     background-color: #faf9f8;
 }
@@ -267,7 +247,6 @@ body {
 }
 
 .popular__paragraph {
-
     line-height: 1.7;
     margin-bottom: 15px;
 }
@@ -281,6 +260,7 @@ body {
     display: block;
 }
 
+/*popular*/
 .popular {
     text-align: center;
 }
@@ -290,11 +270,9 @@ body {
     gap: 0.5em;
     justify-content: center;
     align-items: center;
-
     /*adaptables sin usare mediaqueri*/
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .popular__element {
@@ -306,7 +284,6 @@ body {
     padding: 30px;
 }
 
-
 .popular__popular {
     margin-top: 70px;
     font-size: 2.5rem;
@@ -316,7 +293,6 @@ body {
     margin-top: 2px;
     font-size: 0.7rem;
 }
-
 
 #islandia {
     background-position: 49% 100%;
@@ -379,25 +355,10 @@ body {
 
 /*GUIA*/
 
-.guia__element {
-    display: flex;
-    text-align: center;
-    border-radius: 10px;
-    width: 300px;
-}
+#check {
 
-.guia__text {
-    text-align: left;
-    width: 100%;
-    margin-top: 8%;
-    margin-right: 5%;
-    font-family: 'DM';
-    font-size: 1rem;
-}
-
-.guia__text__flex {
-    display: flex;
-    margin-bottom: 9px;
+    color: forestgreen;
+    padding: 10px;
 }
 
 .guia__table {
@@ -411,29 +372,74 @@ body {
 
 }
 
-#check {
+.guia__element {
+    display: flex;
+    text-align: center;
+    border-radius: 10px;
+    width: 749px;
+}
 
-    color: forestgreen;
-    padding: 10px;
+.guia__element img {
+    position: relative;
+    height: 378px;
+    width: 200px;
+    left: -53px;
+    transform: rotate(-90deg);
+
+}
+
+.guia__text {
+    font-family: 'DM';
+    width: 500px;
+}
+
+.guia__title {
+    font-family: 'DM';
+    font-weight: bold;
+    padding-bottom: 8px;
+
 }
 
 .guia__title__paragrahp {
     font-family: 'DM';
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: black;
+    margin: 50px;
+    text-align: left;
+}
+
+.guia__text__flex {
+    margin-left: 30px;
+    display: flex;
+    margin-bottom: 9px;
 }
 
 .guia__paragrahp {
     font-family: 'DM';
     font-weight: bold;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     color: black;
-
 
 }
 
 
+.banner__internet {
+    margin-top: 10px;
+    display: flex;
+}
 
+.banner__internet img {
+    opacity: 40%;
+    margin-left: 40%;
+    width: 20px;
+    height: 20px;
+}
+
+.banner__paragrahp {
+    font-family: 'DM';
+    color: darkgrey;
+    margin-left: 20px;
+}
 
 
 
@@ -504,7 +510,6 @@ body {
 }
 
 /*QUESTIONS*/
-
 .questions {
     text-align: center;
 }
@@ -517,7 +522,6 @@ body {
 }
 
 .questions__padding {
-
     padding: 0;
     transition: padding .3s;
     border: 1px solid #5454D4;
@@ -529,7 +533,6 @@ body {
 }
 
 .questions__answer {
-
     font-family: sans-serif;
     padding: 0 30px 0;
     overflow: hidden;
@@ -581,8 +584,6 @@ body {
 }
 
 /*FOOTER*/
-
-
 .footer {
     background-color: #1D293F;
 }
@@ -598,7 +599,6 @@ body {
 .footer__newsletter {
     color: #fff;
 }
-
 
 .footer__container {
     display: flex;
@@ -656,7 +656,6 @@ body {
 }
 
 .footer__copy {
-
     --padding-container: 30px 0;
     text-align: center;
     color: #fff;
@@ -679,9 +678,7 @@ body {
 66666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666
 66666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666
 /*MEDIAQUERY*/
-
 @media (max-width:600px) {
-
     .nav__logo__img {
         margin-left: 2%;
         width: 33%;
@@ -719,7 +716,6 @@ body {
         height: 53%;
     }
 
-
     .cta a {
         margin-left: 30px;
         font-size: 1.3rem;
@@ -730,9 +726,7 @@ body {
         display: flex-inline;
         margin-left: 30px;
         margin-top: 2px;
-
     }
-
 
     .hero__paragraph {
         font-size: 1rem;
@@ -744,7 +738,6 @@ body {
 
     .about__table {
         gap: 0;
-
     }
 
     .about__text {
@@ -756,7 +749,6 @@ body {
         font-size: 1rem;
     }
 
-
     .about__title {
         padding-bottom: 8px;
     }
@@ -764,9 +756,7 @@ body {
     .about__paragrahp {
         font-size: 0.9rem;
         color: darkgrey;
-
     }
-
 
     .about__element {
         width: 600px;
@@ -778,13 +768,9 @@ body {
         flex-direction: row-reverse;
     }
 
-
-
     .about__img {
         width: 200px;
     }
-
-
 
     .subtitle {
         font-size: 1.8rem;
@@ -794,9 +780,7 @@ body {
         width: 147px;
         height: 171px;
         text-align: left;
-
     }
-
 
     .popular__element--best {
         width: 90%;
@@ -804,16 +788,16 @@ body {
     }
 
     .popular__popular {
-
         margin-top: 86px;
         font-size: 1.2rem;
     }
 
+    #check {
+
+        font-size: 1.2rem;
+    }
 
     .guia__element {
-        display: flex;
-        text-align: center;
-        border-radius: 10px;
         width: 600px;
     }
 
@@ -821,42 +805,52 @@ body {
         position: relative;
         height: 378px;
         width: 200px;
-        left: -53px;
+        left: -69px;
+        transform: rotate(0deg);
+    }
+
+
+
+    .guia__text {
+        margin-left: -14%;
+        text-align: left;
+        width: 100%;
+        margin-top: 8%;
+        margin-right: 5%;
+        font-size: 1rem;
+    }
+
+    .guia__title {
+        margin-right: 30px;
     }
 
     .guia__title__paragrahp {
         font-size: 0.8rem;
         margin-bottom: 20px;
+        margin: 0px;
+        margin-bottom: 18px;
+        margin-right: 22px;
 
     }
 
-    .guia__text {
-        margin-left: -6%;
+
+    .guia__text__flex {
+        margin-left: 0px;
     }
 
     .guia__paragrahp {
-
         font-size: 0.7rem;
         margin-top: 10px;
         margin-right: 15px;
-
     }
 
 
 
+    .banner__internet img {
 
+        margin-left: 30px;
 
-
-
-
-
-
-
-
-
-
-
-
+    }
 
 
 
@@ -908,7 +902,6 @@ body {
         /*centra el boton */
         margin: 0 auto;
         width: 50%;
-
     }
 
     /*/////////////////////////////////////////////////////////////////////////////////////////////////*
@@ -956,15 +949,12 @@ body {
             font-size: 2rem;
         }
 
-
         .about__main {}
 
         /*se centra en medio de la grid*/
         /*.about__icons:last-of-type {
             grid-column: 1/-1;
         }*/
-
-
         .popular__container {
             grid-template-columns: 1fr;
             grid-template-rows: max-content 1fr;
@@ -988,11 +978,9 @@ body {
             justify-items: center;
         }
 
-
         .testimony__img {
             width: 200px;
             height: 200px;
-
         }
 
         .questions__copy {
@@ -1022,6 +1010,4 @@ body {
         .footer__input {
             flex: 1;
         }
-
     }
-}
