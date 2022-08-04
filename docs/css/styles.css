@@ -484,13 +484,16 @@ body {
     border-width: thin;
     border-color: lightgray;
     background-color: #fff;
+
 }
 
 .planify__orange {
+    display: flex;
     font-size: 1.4rem;
     padding: 17px;
     padding-left: 34px;
-    margin-left: 45px;
+    justify-content: center;
+    align-items: center;
     font-weight: 200;
     text-align: left;
     width: 301px;
@@ -505,7 +508,10 @@ body {
 
 /*FOOTER*/
 .footer {
-    background-color: #1D293F;
+    padding: 3%;
+    background-color: #faf9f8;
+
+
 }
 
 .footer__title {
@@ -517,15 +523,18 @@ body {
 
 .footer__title,
 .footer__newsletter {
-    color: #fff;
+    font-family: "Jakarta";
+    font-weight: bold;
+    color: #e65023;
 }
 
 .footer__container {
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     /*linea*/
-    border-bottom: 3px solid #fff;
+    border-bottom: 3px solid #e65023;
     padding-bottom: 60px;
 }
 
@@ -567,7 +576,7 @@ body {
     display: inline-block;
     height: 50px;
     padding: 0 20px;
-    background-color: #2091F9;
+    background-color: #e65023;
     border: none;
     font-size: 1rem;
     color: #fff;
@@ -578,7 +587,7 @@ body {
 .footer__copy {
     --padding-container: 30px 0;
     text-align: center;
-    color: #fff;
+    color: #e65023;
 }
 
 .footer__copyright {
@@ -588,10 +597,16 @@ body {
 
 .footer__icons {
     margin-bottom: 10px;
+    color: #e65023;
 }
 
 .footer__img {
     width: 30px;
+}
+
+.footer__nav__links {
+    color: #e65023;
+    text-decoration: none;
 }
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////*
