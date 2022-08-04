@@ -45,7 +45,6 @@ body {
 .hero::before {
     content: "";
     position: absolute;
-
     width: 100%;
     height: 450px;
     background-image: linear-gradient(180deg, #27262616 0%, #000000c8 100%), url('../images/fondo_carrusel_1.png');
@@ -249,13 +248,16 @@ body {
 /*POPULAR*/
 
 .popular {
-    background-color: beige;
+    background-color: #faf9f8;
 }
 
 .subtitle {
-    color: var(--color-title);
-    font-size: 2rem;
+    font-family: 'DM';
+    font-size: 1.7rem;
     margin-bottom: 25px;
+    text-align: left;
+    margin-right: 35%;
+    margin-left: 10%;
 }
 
 .populare__container {
@@ -287,8 +289,8 @@ body {
 
 .popular__table {
     padding-top: 11px;
-    gap: 2.5em;
-    justify-content: space-evenly;
+    gap: 0.5em;
+    justify-content: center;
     align-items: center;
 
     /*adaptables sin usare mediaqueri*/
@@ -298,39 +300,60 @@ body {
 }
 
 .popular__element {
-    font-family: sans-serif;
+    color: white;
     background-color: #e5e5f7;
     text-align: center;
     border-radius: 10px;
     width: 330px;
-    padding: 40px;
-    --color-plan: #696871;
-    --color-popular: #1d293f;
-    --bg-cta: #fff;
-    --color-cta: #5454d4;
-    --color-items: #696871;
+    padding: 30px;
 }
 
-.popular__element--best {
-    width: 370px;
-    padding: 60px 40px;
-    background-color: #FF7143;
-    --color-plan: rgb(255 255 255 / 75%);
-    --color-popular: #fff;
-    --bg-cta: #9F3919;
-    --color-cta: #FFF;
-    --color-items: #fff;
-}
-
-.popular__name {
-    color: var(--color-plan);
-    margin-bottom: 15px;
-    font-weight: 300;
-}
 
 .popular__popular {
+    margin-top: 70px;
     font-size: 2.5rem;
-    color: var(--color-popular);
+}
+
+.popular__features {
+    margin-top: 2px;
+    font-size: 0.7rem;
+}
+
+
+#islandia {
+    background-position: 49% 100%;
+    background-size: cover;
+    background-image: linear-gradient(180deg, #27262616 0%, #00000061 100%), url("../images/islandia.png");
+}
+
+#egipto {
+    background-position: 49% 100%;
+    background-size: cover;
+    background-image: linear-gradient(180deg, #27262616 0%, #00000061 100%), url("../images/egipto.png");
+}
+
+#india {
+    background-position: 49% 100%;
+    background-size: cover;
+    background-image: linear-gradient(180deg, #27262616 0%, #00000061 100%), url("../images/india.png");
+}
+
+#tailandia {
+    background-position: 45% 100%;
+    background-size: cover;
+    background-image: linear-gradient(180deg, #27262616 0%, #00000061 100%), url("../images/tailandia.png");
+}
+
+#vietnam {
+    background-position: 49% 100%;
+    background-size: cover;
+    background-image: linear-gradient(180deg, #27262616 0%, #00000061 100%), url("../images/vietnam.png");
+}
+
+#jordania {
+    background-position: 49% 37%;
+    background-size: cover;
+    background-image: linear-gradient(180deg, #27262616 0%, #00000061 100%), url("../images/jordania.png");
 }
 
 .popular__items {
@@ -695,47 +718,17 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     .subtitle {
         font-size: 1.8rem;
     }
 
     .popular__element {
-        width: 90%;
+        width: 147px;
+        height: 171px;
+        text-align: left;
+
     }
+
 
     .popular__element--best {
         width: 90%;
@@ -743,7 +736,9 @@ body {
     }
 
     .popular__popular {
-        font-size: 2rem;
+
+        margin-top: 86px;
+        font-size: 1.2rem;
     }
 
     .testimony {
