@@ -441,146 +441,66 @@ body {
     margin-left: 20px;
 }
 
+/*PLANIFY*/
 
-
-
-
-
-
-
-
-
-
-
-/*TESTIMONY*/
-
-.testimony {
-    background-color: #e5e5f7;
-}
-
-.testimony__container {
-    display: grid;
-    grid-template-columns: 50px 1fr 50px;
-    gap: 1em;
-    align-items: center;
-}
-
-.testimony__body {
-    display: grid;
-    grid-template-columns: 1fr max-content;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2em;
-    grid-column: 2/3;
-    grid-row: 1/2;
-    opacity: 0;
-    pointer-events: none;
-}
-
-/*solamente se mostraran el testimony body show*/
-/*los otros estan encima pero no se ven*/
-.testimony__body--show {
-    pointer-events: unset;
-    opacity: 1;
-    transition: opacity 1.5s ease-in-out;
-}
-
-.testimony__img {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: 50% 30%;
-}
-
-.testimony__texts {
-    max-width: 700px;
-}
-
-.testimony__course {
-    background-color: royalblue;
-    color: #fff;
-    display: inline-block;
-    padding: 5px;
-}
-
-.testimony__arrow {
-    width: 90%;
-    cursor: pointer;
-}
-
-/*QUESTIONS*/
-.questions {
+.planify__title {
+    font-family: "DM";
     text-align: center;
+    color: #e65023;
+    font-size: 0.8rem;
+    margin-bottom: -33px;
 }
 
-.questions__container {
-    display: grid;
-    gap: 2em;
-    padding-top: 50px;
-    padding-bottom: 100px;
+.planify__subtitle {
+    margin-top: 35px;
+    font-family: "DM";
+    text-align: center;
+    font-size: 1.7rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+    margin-bottom: 15px;
 }
 
-.questions__padding {
-    padding: 0;
-    transition: padding .3s;
-    border: 1px solid #5454D4;
-    border-radius: 6px;
-}
-
-.questions__padding--add {
-    padding-bottom: 30px;
-}
-
-.questions__answer {
-    font-family: sans-serif;
-    padding: 0 30px 0;
-    overflow: hidden;
-}
-
-.questions__title {
-    text-align: left;
-    display: flex;
-    font-size: 20px;
-    padding: 30px 0 30px;
-    cursor: pointer;
-    color: var(--color-title);
-    justify-content: space-between;
-}
-
-.questions__arrow {
-    border-radius: 50%;
-    background-color: var(--color-title);
-    width: 25px;
-    height: 25px;
-    display: flex;
+.planify__table {
+    padding-top: 11px;
+    gap: 1em;
     justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
     align-items: center;
-    align-self: flex-end;
-    margin-left: 10px;
-    transition: transform .3s;
+    /*adaptables sin usare mediaqueri*/
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.questions__arrow--rotate {
-    transform: rotate(180deg);
+.planify__button {
+    font-family: "DM";
+    font-weight: bold;
+    padding: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 30px;
+    border-style: solid;
+    border-width: thin;
+    border-color: lightgray;
+    background-color: #fff;
 }
 
-.questions__show {
+.planify__orange {
+    font-size: 1.4rem;
+    padding: 17px;
+    padding-left: 34px;
+    margin-left: 45px;
+    font-weight: 200;
     text-align: left;
-    height: 0;
-    transition: height .3s;
+    width: 301px;
+    height: 61px;
+    color: white;
+    background-color: #e65023;
 }
 
-.questions__img {
-    border-radius: 50%;
-    background-color: royalblue;
-    display: block;
-}
-
-.questions__copy {
-    width: 60%;
-    margin: 0 auto;
-    margin-bottom: 30px;
+.planify__button i {
+    margin-left: 60px;
 }
 
 /*FOOTER*/
@@ -844,36 +764,26 @@ body {
         margin-right: 15px;
     }
 
-
-
     .banner__internet img {
-
         margin-left: 30px;
 
     }
 
+    .planify__button {
 
+        padding-left: 20px;
+        padding-right: 20px;
 
-    .testimony {
-        --padding-container: 60px 0;
     }
 
-    .testimony__container {
-        grid-template-columns: 28px 1fr 28px;
-        gap: .9em;
+    .planify__orange {
+
+        padding: 17px;
+        padding-left: 34px;
+        margin-left: 45px;
+
     }
 
-    .testimony__arrow {
-        width: 100%;
-    }
-
-    .testimony__course {
-        margin-top: 15px;
-    }
-
-    .questions__title {
-        font-size: 1rem;
-    }
 
     .footer__title {
         justify-self: start;
