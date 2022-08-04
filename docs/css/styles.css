@@ -167,7 +167,6 @@ body {
 }
 
 
-
 /*ABOUT*/
 .about {
     text-align: center;
@@ -282,7 +281,6 @@ body {
     display: block;
 }
 
-/*popular*/
 .popular {
     text-align: center;
 }
@@ -377,6 +375,76 @@ body {
     box-shadow: 0 0 1px rgba(0, 0, 0, .5);
 
 }
+
+
+/*GUIA*/
+
+.guia__element {
+    display: flex;
+    text-align: center;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.guia__text {
+    text-align: left;
+    width: 100%;
+    margin-top: 8%;
+    margin-right: 5%;
+    font-family: 'DM';
+    font-size: 1rem;
+}
+
+.guia__text__flex {
+    display: flex;
+    margin-bottom: 9px;
+}
+
+.guia__table {
+    padding-top: 11px;
+    justify-content: space-evenly;
+    align-items: center;
+
+    /*adaptables sin usare mediaqueri*/
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#check {
+
+    color: forestgreen;
+    padding: 10px;
+}
+
+.guia__title__paragrahp {
+    font-family: 'DM';
+    font-size: 0.8rem;
+    color: black;
+}
+
+.guia__paragrahp {
+    font-family: 'DM';
+    font-weight: bold;
+    font-size: 0.7rem;
+    color: black;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*TESTIMONY*/
 
@@ -740,6 +808,57 @@ body {
         margin-top: 86px;
         font-size: 1.2rem;
     }
+
+
+    .guia__element {
+        display: flex;
+        text-align: center;
+        border-radius: 10px;
+        width: 600px;
+    }
+
+    .guia__element img {
+        position: relative;
+        height: 378px;
+        width: 200px;
+        left: -53px;
+    }
+
+    .guia__title__paragrahp {
+        font-size: 0.8rem;
+        margin-bottom: 20px;
+
+    }
+
+    .guia__text {
+        margin-left: -6%;
+    }
+
+    .guia__paragrahp {
+
+        font-size: 0.7rem;
+        margin-top: 10px;
+        margin-right: 15px;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     .testimony {
         --padding-container: 60px 0;
