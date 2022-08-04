@@ -1,6 +1,6 @@
 (function(){
 
-    /*con [... sdasdasdasd] creas una rray en vez de un nodo  */
+    /*con [...] creas una array en vez de un nodo  */
     const sliders = [...document.querySelectorAll('.testimony__body')];
     const buttonNext = document.querySelector('#next');
     const buttonBefore = document.querySelector('#be');
@@ -9,7 +9,6 @@
 buttonNext.addEventListener('click',() => {
  
     changePosition2(++value);
-   
 
 })
 
