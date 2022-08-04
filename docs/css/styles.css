@@ -187,11 +187,30 @@ body {
 
 }
 
+.about__table {
+    padding-top: 11px;
+    gap: 2.5em;
+    justify-content: space-evenly;
+    align-items: center;
+
+    /*adaptables sin usare mediaqueri*/
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.about__element {
+    display: flex;
+    text-align: center;
+    border-radius: 10px;
+    width: 300px;
+
+}
+
 .about__text {
-    margin-top: 5%;
-    ;
+    margin-top: 20%;
     font-family: 'DM';
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 .about__title {
@@ -199,37 +218,44 @@ body {
 }
 
 .about__paragrahp {
-    font-size: 1.5rem;
+    font-size: 0.7rem;
     color: darkgrey;
-    margin-left: 20%;
-    margin-right: 20%;
+
+}
+
+.about__element__reverse {
+
+    display: flex;
+    text-align: center;
+    border-radius: 10px;
+    width: 300px;
+
+}
+
+.about__text__reverse {
+    text-align: left;
+    width: 100%;
+    margin-top: 15%;
+    margin-left: 15%;
+    font-family: 'DM';
+    font-size: 1rem;
+}
+
+
+.about__img {
+    width: 200px;
+}
+
+/*POPULAR*/
+
+.popular {
+    background-color: beige;
 }
 
 .subtitle {
     color: var(--color-title);
     font-size: 2rem;
     margin-bottom: 25px;
-}
-
-
-
-.about__article {
-    display: grid;
-    justify-items: center;
-    width: 100%;
-    overflow: hidden;
-
-}
-
-.about__img {
-    width: 200px;
-}
-
-
-/*POPULAR*/
-
-.popular {
-    background-color: beige;
 }
 
 .populare__container {
@@ -575,7 +601,7 @@ body {
     }
 
     .hero::before {
-        height: 76%;
+        height: 61%;
         background-position: 70% 100%;
     }
 
@@ -625,36 +651,83 @@ body {
         padding-top: 0px;
     }
 
-    .about__article {
-        display: flex;
-        grid-auto-flow: column;
+    .about__table {
+        gap: 0;
+
     }
 
     .about__text {
-        margin-top: 35px;
-        padding: 25px 25px 31px 25px;
         text-align: left;
+        width: 100%;
+        margin-top: 15%;
+        margin-right: 5%;
+        font-family: 'DM';
+        font-size: 1rem;
     }
 
-    #reverse {
-        display: flex;
-        flex-direction: row-reverse;
-    }
-
-    .about__img {
-        padding-top: 25px;
-        width: 140px;
-    }
 
     .about__title {
-        font-size: 1.2rem;
+        padding-bottom: 8px;
     }
 
     .about__paragrahp {
         font-size: 0.9rem;
-        margin-right: 0;
-        margin-left: 0;
+        color: darkgrey;
+
     }
+
+
+    .about__element {
+        width: 600px;
+    }
+
+    .about__element__reverse {
+        margin-top: -15%;
+        width: 600px;
+        flex-direction: row-reverse;
+    }
+
+
+
+    .about__img {
+        width: 200px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     .subtitle {
         font-size: 1.8rem;
