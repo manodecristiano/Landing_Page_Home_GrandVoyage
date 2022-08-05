@@ -691,7 +691,7 @@ body {
 }
 
 .carrusel__text {
-
+    color: darkgrey;
     text-align: left;
 }
 
@@ -1161,9 +1161,7 @@ canvas {
         padding: 0px;
     }
 
-    .swiper-slide {
-        width: 43% !important;
-    }
+
 
     .swiper-button-next {
         color: red;
