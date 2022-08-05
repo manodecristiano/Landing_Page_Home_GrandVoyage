@@ -10,13 +10,14 @@
     <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/nomalize.css">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <!--cambia el color del tema en el movil-->
     <!--cambia el color del tema en el movil-->
     <meta name="theme-color" content="#2091F9">
     <script src="https://kit.fontawesome.com/e0de392707.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script src="https://kit.fontawesome.com/48764efa36.js" crossorigin="anonymous"></script>
     <!--para salir en SEO-->
     <!--para salir en SEO-->
     <meta name="title" content="Mayor especialista en grandes viajes">
@@ -208,7 +209,35 @@
         <!-- <section class="carrusel"> -->
         <section class="carrusel">
 
+            <h1 class="subtitle">Viajes destacados</h1>
+            <div id="album-rotator">
+                <div id="album-rotator-holder">
+                    <a target="_top" class="album-item" href="#">
+                        <button class="carrusel__button"></button>
+                        <h4 class="guia__title__paragrahp">8 días en Islandia en hotel *****</h4>
+                        <p class="guia__paragrahp"> Desde 1299€con vuelos, hotel y guia.</p>
 
+                    </a>
+                    <a target="_top" class="album-item" href="#">
+                        <button class="carrusel__button">
+
+                        </button>
+                    </a>
+                    <a target="_top" class="album-item" href="#">
+                        <button class="carrusel__button">
+
+                        </button>
+                    </a>
+                    <a target="_top" class="album-item" href="#">
+                        <button class="carrusel__button">
+                        </button>
+                    </a>
+                    <a class="album-item" href="#">
+                        <button class="carrusel__button">
+                        </button>
+                    </a>
+                </div>
+            </div>
 
 
 
@@ -293,7 +322,7 @@
 
         </footer>
     </main>
-    <script src="./js/slider.js"></script>
+    <script type="module" src="./js/carrusel.js"></script>
     <script src="./js/downInformation.js"></script>
     <script src="./js/openMenu.js"></script>
     <script src="./js/animations.js"></script>

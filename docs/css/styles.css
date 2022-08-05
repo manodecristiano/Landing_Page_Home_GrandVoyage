@@ -444,65 +444,71 @@ body {
 }
 
 
+/*CARRUSEL*/
+
+.carrusel {
+    background-color: red;
+
+}
+
+#album-rotator {
+    width: 100%;
+    float: left;
+    white-space: nowrap;
+    overflow: hidden;
+    position: flex;
+    word-break: keep-all;
+    padding: 2rem 0;
+    background-color: red;
+}
+
+#album-rotator-holder {
+    position: relative;
+    user-select: none;
+    will-change: transform;
+    /* transition: all 0.01s ease-out; */
+    /* transition: all 0.01s linear; */
+}
 
 
 
+.carrusel__button {
+    word-break: keep-all;
+    background: black;
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.5);
+    position: relative;
+    width: 150px;
+    -webkit-user-drag: none;
+    user-drag: none;
+    height: 150px;
+    user-select: none;
+    border-radius: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    margin: 0 3rem 0 0;
+    transition: all 0.2s ease-out;
+    transform: scale(1);
+}
+
+.carrusel__button:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+
+.subtitle__carrusel {
+    font-weight: 100;
+    line-height: 1.25rem;
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 
 
