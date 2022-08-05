@@ -363,7 +363,7 @@ body {
 
 .guia__table {
     padding-top: 11px;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 
     /*adaptables sin usare mediaqueri*/
@@ -376,24 +376,29 @@ body {
     display: flex;
     text-align: center;
     border-radius: 10px;
-    width: 749px;
+
 }
 
 .guia__element img {
-    position: relative;
-    height: 378px;
-    width: 200px;
-    left: -53px;
-    transform: rotate(-90deg);
+
+    height: 541px;
+    width: 303px;
+
+
 
 }
 
 .guia__text {
     font-family: 'DM';
     width: 500px;
+    margin-left: 11%;
 }
 
 .guia__title {
+
+    margin-left: 45px;
+    text-align: left;
+    font-size: 2rem;
     font-family: 'DM';
     font-weight: bold;
     padding-bottom: 8px;
@@ -406,6 +411,8 @@ body {
     color: black;
     margin: 50px;
     text-align: left;
+
+
 }
 
 .guia__text__flex {
@@ -419,6 +426,9 @@ body {
     font-weight: bold;
     font-size: 0.9rem;
     color: black;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 
 }
 
@@ -488,6 +498,7 @@ body {
 }
 
 .planify__orange {
+    margin: 0 auto;
     display: flex;
     font-size: 1.4rem;
     padding: 17px;
@@ -560,7 +571,7 @@ body {
 }
 
 .footer__input {
-    background-color: #fff;
+    background-color: lemonchiffon;
     height: 50px;
     display: block;
     padding-left: 10px;
@@ -624,7 +635,7 @@ body {
     }
 
     .hero::before {
-        height: 61%;
+        height: 65%;
         background-position: 70% 100%;
     }
 
@@ -637,7 +648,7 @@ body {
 
     .hero__container {
         height: 300px;
-        margin-top: 42%;
+        margin-top: 57%;
     }
 
     .cta {
@@ -733,30 +744,36 @@ body {
     }
 
     .guia__element {
-        width: 600px;
+        width: 50%;
+        margin-bottom: 15px;
     }
 
     .guia__element img {
         position: relative;
-        height: 378px;
-        width: 200px;
-        left: -69px;
+        height: 100%;
+        width: 100%;
+        left: -40%;
         transform: rotate(0deg);
     }
 
 
 
     .guia__text {
-        margin-left: -14%;
+        margin-left: -20%;
         text-align: left;
         width: 100%;
-        margin-top: 8%;
-        margin-right: 5%;
         font-size: 1rem;
     }
 
+    .guia__text__flex {
+        margin-left: -16px;
+        margin-bottom: 0px;
+    }
+
     .guia__title {
-        margin-right: 30px;
+        margin-left: 0px;
+        font-size: 1rem;
+        text-align: left;
     }
 
     .guia__title__paragrahp {
@@ -769,13 +786,8 @@ body {
     }
 
 
-    .guia__text__flex {
-        margin-left: 0px;
-    }
-
     .guia__paragrahp {
         font-size: 0.7rem;
-        margin-top: 10px;
         margin-right: 15px;
     }
 
