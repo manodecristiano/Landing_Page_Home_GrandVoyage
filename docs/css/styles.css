@@ -15,6 +15,13 @@
     src: url(../fonts/DMSans-Regular.ttf);
 }
 
+@keyframes mover {
+
+    100% {
+        transform: translate(20%);
+    }
+}
+
 body {
     font-family: 'Jakarta', Semibold;
 }
@@ -284,6 +291,10 @@ body {
     padding: 30px;
 }
 
+.popular__element:hover {
+    transform: scale(1.10);
+}
+
 .popular__popular {
     margin-top: 70px;
     font-size: 2.5rem;
@@ -380,7 +391,7 @@ body {
 }
 
 .guia__element img {
-
+    margin-right: 252px;
     height: 541px;
     width: 303px;
 
@@ -431,6 +442,68 @@ body {
     display: flex;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .banner__internet {
@@ -752,8 +825,8 @@ body {
         position: relative;
         height: 100%;
         width: 100%;
-        left: -40%;
-        transform: rotate(0deg);
+        left: -191%;
+
     }
 
 
@@ -948,3 +1021,4 @@ body {
             flex: 1;
         }
     }
+}
