@@ -590,9 +590,7 @@ body {
     opacity: 1;
 }
 
-.swiper-pagination-bullet-active {
-    background-color: red !important;
-}
+
 
 
 
@@ -797,6 +795,11 @@ canvas {
     border-color: lightgray;
     background-color: #fff;
 
+}
+
+.planify__button:hover {
+    background-color: #e65023;
+    color: white;
 }
 
 .planify__orange {
@@ -1142,7 +1145,8 @@ canvas {
 
 
     .slide-content {
-
+        border-radius: 0px;
+        padding-left: 2%;
         padding-right: 11%;
         margin-left: 1%;
         margin-right: -11px;
@@ -1156,7 +1160,9 @@ canvas {
     }
 
     .slider__title {
+        font-size: 1.5rem;
         margin-right: 70%;
+        margin-bottom: 5%;
     }
 
     .slide-content {
@@ -1167,11 +1173,21 @@ canvas {
 
 
     .card-content {
-        margin-top: -20px;
+
+        margin-top: 8px;
         padding: 0px;
-        margin-left: -10px;
+        margin-left: 25px;
+        margin-right: -2px;
     }
 
+    .card-content h2 {
+        font-size: 0.9rem;
+        margin-right: 17px;
+    }
+
+    .card-content p {
+        font-size: 0.7rem
+    }
 
     .swiper-button-next {
         color: red;
@@ -1188,7 +1204,7 @@ canvas {
         font-size: 0.7rem;
         color: darkgrey;
         margin-bottom: 40px;
-        margin-right: 55px;
+        margin-right: 32px;
 
     }
 
@@ -1245,61 +1261,11 @@ canvas {
 }
 
 
-
 /*/////////////////////////////////////////////////////////////////////////////////////////////////*
 888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888
 /*MEDIAQUERY*/
-@media (max-width:870px)and(min-width:600px) {
 
-    .slide-content {
-
-        padding-right: 0%;
-        margin-left: 0%;
-        margin-right: 0px;
-
-    }
-
-    .card-image {
-        height: 171px;
-        width: 152px;
-    }
-
-
-
-    .image-content {
-        padding: 0px;
-        margin: 0px;
-        row-gap: 0px;
-    }
-
-    .slider__title {
-        margin-right: 70%;
-    }
-
-    .slide-content {
-
-        margin: 0px;
-    }
-
-
-
-    .card-content {
-        margin-top: -20px;
-        padding: 0px;
-        margin-left: -10px;
-    }
-
-
-    .swiper-button-next {
-        color: red;
-    }
-
-    .swiper-navBtn::before,
-    .swiper-navBtn::after {
-
-        display: none;
-    }
-
+@media (max-width:870px) {
     .nav__menu {
         display: block;
     }
