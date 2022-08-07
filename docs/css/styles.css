@@ -675,9 +675,46 @@ body {
 
 .carrusel__track {
     display: flex;
-    animation: scroll 140s linear infinite;
+    animation: scroll 40s linear infinite;
     -webkit-animation: scroll 40s linear infinite;
     width: calc(200px * 10);
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(calc(+100px*11));
+        transform: translateX(calc(+100px*11));
+    }
+
+    100% {
+        -webkit-transform: translateX(calc(-200px*11));
+        transform: translateX(calc(-200px*11));
+
+    }
+
+}
+
+.waves {
+    z-index: -1;
+    height: 700px;
+    width: 700px;
+    position: relative;
+    top: -325px;
+    background: red;
+    background-repeat: repeat-x;
+    animation: animatedImage 5s linear infinite;
+}
+
+
+
+@keyframes animatedImage {
+    0% {
+        left: 2000px;
+    }
+
+    100% {
+        left: -2000px;
+    }
 }
 
 .carrusel__slide {
@@ -729,25 +766,9 @@ body {
     line-height: 1.25rem;
 }
 
-@keyframes scroll {
-    0% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-    }
 
-    100% {
-        -webkit-transform: translateX(calc(-200px*5));
-        transform: translateX(calc(-200px*5));
 
-    }
 
-}
-
-canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
 
 
 
