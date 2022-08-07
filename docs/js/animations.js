@@ -1,11 +1,30 @@
 gsap.registerPlugin(ScrollTrigger);
 
+const movil = document.querySelector('#movil__animated');
+const movil2 = document.querySelector('#movil__animated2');
 
-gsap.to('#movil__animated2',{
-   duration:15,
-   x:130,
-   ease:'power3',
-   scrollTrigger:"#movil__animated"
-
+const tl = gsap.timeline({
+                   
+                  scrollTrigger:{
+                  trigger:".popular__table",
+                  markers:true,
+                  start:"50% 20%",
+                  end:"50% 20%",
+                  scrub:3,
+                  pin:true,
+          },
 });
 
+
+tl.to(movil,{ 
+        x:730,
+        ease:'power1',
+        duration:10},
+        "-=7");
+
+
+ tl.to(movil2,{ 
+         x:-730,
+         ease:'power1',
+         duration:10},
+         "-=7");    

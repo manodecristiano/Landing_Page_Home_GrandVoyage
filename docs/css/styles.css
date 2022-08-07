@@ -376,6 +376,8 @@ body {
 
 /*GUIA*/
 .guia {
+    width: 100%;
+
     display: flex;
     font-family: 'DM';
     justify-content: center;
@@ -386,16 +388,27 @@ body {
     padding: 10px;
 }
 
+#movil__animated {
+    position: absolute;
+    left: -20%;
+    height: 541px;
+    width: 303px;
+}
 
+#movil__animated2 {
+    position: absolute;
+    right: -20%;
+    height: 541px;
+    width: 303px;
+}
 
 .guia__element__img {
 
     display: flex;
     text-align: center;
     border-radius: 10px;
+    background-color: yellow;
 
-    height: 541px;
-    width: 303px;
 
 }
 
@@ -457,7 +470,7 @@ body {
 .banner__internet {
     justify-content: center;
     margin-bottom: 125px;
-    margin-top: -125px;
+    margin-top: 20px;
     display: flex;
 
 }
