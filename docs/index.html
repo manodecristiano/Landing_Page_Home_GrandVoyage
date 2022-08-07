@@ -60,13 +60,8 @@
         <section class="hero__container container">
 
             <h1 class="hero__title">Mayor especialista en grandes viajes</h1>
-            <div class="cta">
 
-                <a href="#">Planifica tu viaje
-                    <i class="fa-solid fa-angle-right"></i>
-                </a>
-
-            </div>
+            <button class="cta__button">Planifica tu viaje <i class="fa-solid fa-angle-right"></i></button>
         </section>
 
     </header>
@@ -113,7 +108,7 @@
 
 
         <section class="popular container">
-            <h2 class="subtitle">Los destinos más populares</h2>
+            <h2 class="popular__subtitle">Los destinos más populares</h2>
 
             <div class="popular__table">
 
@@ -154,10 +149,15 @@
 
         <section class="guia container">
             <div class="guia__table">
-                <div class="guia__element">
+
+                <div class="guia__element__img">
+
                     <img src="./images/movil.png" id="movil__animated" class="guia__img" alt="imagen de moviles">
+
                 </div>
+
                 <div class="guia__element">
+
 
                     <div class="guia__text">
                         <h3 class="guia__title">Guía de Viaje a medida</h3>
@@ -193,6 +193,14 @@
                 </div>
 
             </div>
+
+
+
+
+
+
+
+
 
             <div class="banner__internet">
 
@@ -289,50 +297,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         </section>
         <section class="planify container">
             <h4 class="planify__title">PLANIFICA TU VIAJE</h4>
@@ -366,8 +330,28 @@
             <img src="./images/google__Review.png" class="review__img" alt="Review de google">
 
             <div class="carrusel">
-                <div class="carrusel__track">
+                <div id="carrusel__track" class="carrusel__track">
+                    <script>
+                        let num = 0;
+                        let carrusel = document.getElementById('carusel__track')
+                        for (var i = 0; i < 9; i++) {
 
+
+
+
+
+
+                        }
+                    </script>
+
+                    <div class="carrusel__slide">
+                        <button class="carrusel__button" id="carrusel1"> </button>
+                        <div class="carrusel__text ">
+                            < h4 class = "carrusel__title" > Comprometidos y seguros < /h4>
+
+                       </div>
+                   </div>
+                           
                     <div class="carrusel__slide">
                         <button class="carrusel__button" id="carrusel1"></button>
                         <div class="carrusel__text ">
@@ -474,9 +458,10 @@
 
             <section class="footer__copy container">
                 <div class="footer__social">
-                    <a href="#" class="footer__icons"><img src="./images/facebook.svg" class="footer__img"></a>
-                    <a href="#" class="footer__icons"><img src="./images/twitter.svg" class="footer__img"></a>
-                    <a href="#" class="footer__icons"><img src="./images/youtube.svg" class="footer__img"></a>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
                 </div>
 
                 <h5 class="footer__copyright">Derechos reservados &copy; GrandVoyage</h5>
@@ -485,7 +470,6 @@
         </footer>
     </main>
     <script src="js/swiper-bundle.min.js"></script>
-    <script type="module" src="./js/carrusel__review.js"></script>
     <script src="./js/downInformation.js"></script>
     <script src="./js/openMenu.js"></script>
     <script src="./js/slider.js"></script>
