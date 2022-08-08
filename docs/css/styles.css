@@ -131,7 +131,7 @@ body {
 .cta__button {
     font-family: "DM";
     font-weight: 900;
-    padding: 12px;
+
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 30px;
@@ -140,9 +140,9 @@ body {
     font-size: 1.4rem;
     padding: 17px;
     padding-left: 34px;
-    justify-content: center;
     align-items: center;
     text-align: left;
+
     width: 270px;
     height: 61px;
     color: black;
@@ -160,7 +160,7 @@ body {
 
 .cta__button i {
     color: #e65023;
-    margin-left: 30px;
+    margin-left: 22px;
 }
 
 .cta__button i:hover {
@@ -379,7 +379,6 @@ body {
 /*GUIA*/
 .guia {
     width: 100%;
-
     display: flex;
     font-family: 'DM';
     justify-content: center;
@@ -407,7 +406,8 @@ body {
 
 
 .guia__element__img {
-
+    width: ;
+    background-color: red;
     display: flex;
     text-align: center;
     border-radius: 10px;
@@ -574,6 +574,7 @@ body {
 }
 
 .swiper-pagination {
+
     color: black;
 }
 
@@ -632,6 +633,7 @@ body {
 }
 
 .swiper-pagination-bullet {
+
     background-color: #e65023 !important;
     opacity: 1;
 }
@@ -1022,8 +1024,6 @@ body {
     #movil__animated {}
 
 
-
-
     .swiper-navBtn::before,
     .swiper-navBtn::after {
 
@@ -1060,7 +1060,6 @@ body {
 
 
     .card-content {
-
         margin-top: 8px;
         padding: 0px;
         margin-left: 25px;
@@ -1073,7 +1072,8 @@ body {
     }
 
     .card-content p {
-        font-size: 0.7rem
+        font-size: 0.7rem;
+        margin-bottom: 20%;
     }
 
 
@@ -1433,19 +1433,6 @@ body {
         row-gap: 0px;
     }
 
-    .card-image {
-        height: 171px;
-        width: 152px;
-    }
-
-
-    .card-content {
-
-        margin-top: 8px;
-        padding: 0px;
-        margin-left: 25px;
-        margin-right: -2px;
-    }
 
     .card-content h2 {
         font-size: 0.9rem;
@@ -1453,12 +1440,11 @@ body {
     }
 
     .card-content p {
-        font-size: 0.7rem
+        font-size: 0.7rem;
+        margin-bottom: 35px;
     }
 
-    .swiper-button-next {
-        color: red;
-    }
+
 
     .swiper-navBtn::before,
     .swiper-navBtn::after {

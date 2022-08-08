@@ -7,7 +7,7 @@ const tl = gsap.timeline({
                    
                   scrollTrigger:{
                   trigger:".popular__table",
-                  markers:true,
+                  markers:false,
                   start:"50% 20%",
                   end:"50% 20%",
                   scrub:3,
