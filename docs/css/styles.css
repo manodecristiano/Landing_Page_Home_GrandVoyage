@@ -275,6 +275,8 @@ body {
 .popular {
     text-align: center;
 
+    width: 100%;
+
 }
 
 .popular__table {
@@ -402,12 +404,14 @@ body {
     width: 303px;
 }
 
+
+
 .guia__element__img {
 
     display: flex;
     text-align: center;
     border-radius: 10px;
-    background-color: yellow;
+
 
 
 }
@@ -699,8 +703,8 @@ body {
 
 .carrusel__track {
     display: flex;
-    animation: scroll 40s linear infinite;
-    -webkit-animation: scroll 40s linear infinite;
+    animation: scroll 20s linear infinite;
+    -webkit-animation: scroll 20s linear infinite;
     width: calc(200px * 10);
 }
 
@@ -997,12 +1001,84 @@ body {
     text-decoration: none;
 }
 
+@media (max-width:1700px) {
+    #movil__animated2 {
+        display: none
+    }
+
+    #movil__animated {
+        display: none
+    }
+}
 
 /*/////////////////////////////////////////////////////////////////////////////////////////////////*
 888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888
 /*MEDIAQUERY*/
 
 @media (max-width:934px) {
+
+    #movil__animated2 {}
+
+    #movil__animated {}
+
+
+
+
+    .swiper-navBtn::before,
+    .swiper-navBtn::after {
+
+        display: none;
+    }
+
+    .slider__title {
+        margin-bottom: 5%;
+    }
+
+    .slider__section {
+        min-height: 34vh;
+    }
+
+    .slide-content {
+        border-radius: 0px;
+        padding-left: 2%;
+        padding-right: 11%;
+        margin-left: 1%;
+        margin-right: -11px;
+        margin: 0px;
+    }
+
+    .image-content {
+        padding: 0px;
+        margin: 0px;
+        row-gap: 0px;
+    }
+
+    .card-image {
+        height: 171px;
+        width: 152px;
+    }
+
+
+    .card-content {
+
+        margin-top: 8px;
+        padding: 0px;
+        margin-left: 25px;
+        margin-right: -2px;
+    }
+
+    .card-content h2 {
+        font-size: 0.9rem;
+        margin-right: 17px;
+    }
+
+    .card-content p {
+        font-size: 0.7rem
+    }
+
+
+
+
     .nav__logo {
         width: 20%;
     }
@@ -1016,7 +1092,7 @@ body {
     /*el menu existe por delante de todo pero tien la opacidad a 0 */
     .nav__link--menu {
         position: fixed;
-        background-color: #000;
+        background-color: rgba(0, 0, 0, 0.955);
         top: 0;
         margin-left: -5%;
         height: 100%;
@@ -1029,6 +1105,12 @@ body {
         opacity: 0;
         pointer-events: none;
         transition: .7s opacity;
+    }
+
+    .nav__links {
+        font-family: 'DM';
+        font-weight: bold;
+        color: #e65023;
     }
 
     .nav__link--show {
@@ -1059,6 +1141,7 @@ body {
             grid-column: 1/-1;
         }*/
     .popular__container {
+
         grid-template-columns: 1fr;
         grid-template-rows: max-content 1fr;
         gap: 3em;
@@ -1130,6 +1213,16 @@ body {
 66666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666
 /*MEDIAQUERY*/
 @media (max-width:600px) {
+
+
+    #movil__animated {
+        display: inline;
+        left: -600px;
+        height: 500px;
+        width: 303px;
+        top: -30px
+    }
+
 
     .nav__logo {
         width: 38%;
@@ -1245,6 +1338,8 @@ body {
         font-size: 1.2rem;
     }
 
+
+
     .guia__table {
         margin-bottom: 15%;
     }
@@ -1260,7 +1355,7 @@ body {
         position: absolute;
         height: 50%;
         width: 32%;
-        left: -23%;
+        left: -76%;
 
     }
 
@@ -1323,20 +1418,13 @@ body {
 
     }
 
-    .card-image {
-        height: 171px;
-        width: 152px;
-    }
-
-
-
     .slide-content {
         border-radius: 0px;
         padding-left: 2%;
         padding-right: 11%;
         margin-left: 1%;
         margin-right: -11px;
-
+        margin: 0px;
     }
 
     .image-content {
@@ -1345,19 +1433,10 @@ body {
         row-gap: 0px;
     }
 
-    .slider__title {
-        text-align: left;
-        margin-left: 7%;
-        font-size: 1.5rem;
-        margin-right: 70%;
-        margin-bottom: 5%;
+    .card-image {
+        height: 171px;
+        width: 152px;
     }
-
-    .slide-content {
-
-        margin: 0px;
-    }
-
 
 
     .card-content {
@@ -1387,6 +1466,13 @@ body {
         display: none;
     }
 
+    .slider__title {
+        text-align: left;
+        margin-left: 7%;
+        font-size: 1.5rem;
+        margin-right: 70%;
+        margin-bottom: 5%;
+    }
 
     .description {
         font-size: 0.7rem;
