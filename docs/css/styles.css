@@ -299,7 +299,7 @@ body {
     border-radius: 10px;
     width: 330px;
     padding: 30px;
-    /* #413f3fac/*/
+
 }
 
 .popular__element:hover {
@@ -317,41 +317,6 @@ body {
     font-size: 0.7rem;
 }
 
-#islandia {
-    background-position: 49% 100%;
-    background-size: cover;
-    background-image: linear-gradient(180deg, #27262616 0%, #00000061 100%), url("../images/islandia.png");
-}
-
-#egipto {
-    background-position: 49% 100%;
-    background-size: cover;
-    background-image: linear-gradient(180deg, #27262616 0%, #00000061 100%), url("../images/egipto.png");
-}
-
-#india {
-    background-position: 49% 100%;
-    background-size: cover;
-    background-image: linear-gradient(180deg, #27262616 0%, #00000061 100%), url("../images/india.png");
-}
-
-#tailandia {
-    background-position: 45% 100%;
-    background-size: cover;
-    background-image: linear-gradient(180deg, #27262616 0%, #00000061 100%), url("../images/tailandia.png");
-}
-
-#vietnam {
-    background-position: 49% 100%;
-    background-size: cover;
-    background-image: linear-gradient(180deg, #27262616 0%, #00000061 100%), url("../images/vietnam.png");
-}
-
-#jordania {
-    background-position: 49% 37%;
-    background-size: cover;
-    background-image: linear-gradient(180deg, #27262616 0%, #00000061 100%), url("../images/jordania.png");
-}
 
 .popular__items {
     margin-top: 35px;
@@ -406,8 +371,8 @@ body {
 
 
 .guia__element__img {
-    width: ;
-    background-color: red;
+
+
     display: flex;
     text-align: center;
     border-radius: 10px;
@@ -494,6 +459,7 @@ body {
 
 /*SLIDER*/
 .slider__section {
+
     min-height: 48vh;
     align-items: center;
     justify-content: center;
@@ -501,6 +467,7 @@ body {
 }
 
 .slider__title {
+
     font-family: 'Jakarta';
     font-size: 2rem;
     padding-top: 20px;
@@ -546,7 +513,6 @@ body {
 
 .card-image .card-img {
     align-items: center;
-
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -623,12 +589,13 @@ body {
 }
 
 .swiper-button-next {
-
+    top: 42% !important;
     right: 0;
+
 }
 
 .swiper-button-prev {
-
+    top: 42% !important;
     left: 0;
 }
 
@@ -1023,7 +990,6 @@ body {
 
     #movil__animated {}
 
-
     .swiper-navBtn::before,
     .swiper-navBtn::after {
 
@@ -1217,10 +1183,17 @@ body {
 
     #movil__animated {
         display: inline;
-        left: -600px;
+        left: -900px;
         height: 500px;
-        width: 303px;
+        width: 500px;
         top: -30px
+    }
+
+    .guia__element__img {
+        position: absolute;
+        height: 50%;
+        width: 65%;
+
     }
 
 
@@ -1351,15 +1324,6 @@ body {
         margin-top: 50px;
     }
 
-    .guia__element__img {
-        position: absolute;
-        height: 50%;
-        width: 32%;
-        left: -76%;
-
-    }
-
-
 
     .guia__text {
         margin-left: -20%;
@@ -1468,7 +1432,7 @@ body {
 
     }
 
-    .carrusel {
+    */ .carrusel {
         width: 110%;
         margin: -17px;
     }
