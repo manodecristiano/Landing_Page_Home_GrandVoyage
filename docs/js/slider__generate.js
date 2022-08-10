@@ -103,7 +103,7 @@ let swiper = new Swiper(".slide-content", {
 const slider_div = document.getElementById("slider-1");
 let item__slider='';
 function showDivByDiv() {
-    let divs = slider__travels.map(item__slider => `<div class='card swiper-slide'><div class='image-content'> <div class='card-image'> <img src=${item__slider.imageUrl} alt="" class="card-img"> </div></div><div class='card-content'> <h2 class='name'>${item__slider.title}</div><p class='description'>${item__slider.paragraph}</p></div></div>`)
+    let divs = slider__travels.map(item__slider => `<div class='card swiper-slide'><div class='image-content'> <div class='card-image'> <img src=${item__slider.imageUrl} alt="" class="card-img"> </div></div><div class='card-content'> <h2 class='name'>${item__slider.title}</h2><p class='description'>${item__slider.paragraph}</p></div></div>`)
         .join("")
         slider_div.innerHTML += divs
 }
