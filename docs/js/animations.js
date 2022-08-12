@@ -8,8 +8,8 @@ const tl = gsap.timeline({
                   scrollTrigger:{
                   trigger:".popular__table",
                   markers:false,
-                  start:"50% 20%",
-                  end:"50% 20%",
+                  start:"20% 20%",
+                  end:"20% 20%",
                   scrub:3,
                   pin:true,
           },

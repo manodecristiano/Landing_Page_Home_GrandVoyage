@@ -54,47 +54,102 @@ let swiper = new Swiper(".slide-content", {
     imageUrl: "./images/slider/3.png"
 },
 {
-    title: "Viaje a Egipto 10 días en hotel *****",
+    title: "España Slow: Levante, Andalucía y Madrid",
     paragraph: "Desde 999€ con vuelos, hotel y guia",
     imageUrl: "./images/slider/4.png"
 },
 {
-    title: "Viaje a Egipto 10 días en hotel *****",
+    title: "Viaje en privado a Irán",
     paragraph: "Desde 999€ con vuelos, hotel y guia",
     imageUrl: "./images/slider/5.png"
 },
 {
-    title: "Viaje a Egipto 10 días en hotel *****",
+    title: "Viaje por París e Italia en 9 días",
     paragraph: "Desde 999€ con vuelos, hotel y guia",
     imageUrl: "./images/slider/6.png"
 },
 {
-    title: "Viaje a Egipto 10 días en hotel *****",
+    title: "Viaje a Estambul y Capadocia",
     paragraph: "Desde 999€ con vuelos, hotel y guia",
     imageUrl: "./images/slider/7.png"
   },
 {
-    title: "Viaje a Egipto 10 días en hotel *****",
+    title: "Viaje organizado: Turquía en 10 días",
     paragraph: "Desde 999€ con vuelos, hotel y guia",
     imageUrl: "./images/slider/8.png"
 },
 {
-    title: "Viaje a Egipto 10 días en hotel *****",
+    title: "Viaje a Maldivas 8 días",
     paragraph: "Desde 999€ con vuelos, hotel y guia",
     imageUrl: "./images/slider/9.png"
 },
 {
-    title: "Viaje a Egipto 10 días en hotel *****",
+    title: "Viaje a Tierra Santa y Jordania de 11 días",
     paragraph: "Desde 999€ con vuelos, hotel y guia",
     imageUrl: "./images/slider/10.png"
 },
 {
-    title: "Viaje a Egipto 10 días en hotel *****",
+    title: "Viaje a Sicilia y el Sur de Italia",
     paragraph: "Desde 999€ con vuelos, hotel y guia",
     imageUrl: "./images/slider/11.png"
 },
 {
-    title: "Viaje a Egipto 10 días en hotel *****",
+    title: "Viaje Turista: España, Francia e Italia",
+    paragraph: "Desde 999€ con vuelos, hotel y guia",
+    imageUrl: "./images/slider/12.png"
+  },
+  {
+    title: "Viaje a Delhi, Jaipur y Agra",
+    paragraph: "Desde 1189€ con vuelos, hotel y guia",
+    imageUrl: "./images/slider/2.png"
+},
+{
+    title: "6 días en Noruega en hotel",
+    paragraph: "Desde 1299€ con vuelos, hotel y guia",
+    imageUrl: "./images/slider/3.png"
+},
+{
+    title: "Circuito organizado por Perú completo de 11 días",
+    paragraph: "Desde 999€ con vuelos, hotel y guia",
+    imageUrl: "./images/slider/4.png"
+},
+{
+    title: "Viaje organizado de lujo a las islas Maldivas",
+    paragraph: "Desde 999€ con vuelos, hotel y guia",
+    imageUrl: "./images/slider/5.png"
+},
+{
+    title: "Viaje a Turquía con todo incluído",
+    paragraph: "Desde 999€ con vuelos, hotel y guia",
+    imageUrl: "./images/slider/6.png"
+},
+{
+    title: "Viaje a Madagascar 9 días",
+    paragraph: "Desde 999€ con vuelos, hotel y guia",
+    imageUrl: "./images/slider/7.png"
+  },
+{
+    title: "Viaje a Jordania y el Mar Muerto 8 días",
+    paragraph: "Desde 999€ con vuelos, hotel y guia",
+    imageUrl: "./images/slider/8.png"
+},
+{
+    title: "Circuito por el norte de Italia: Milán, Roma y la Toscana",
+    paragraph: "Desde 999€ con vuelos, hotel y guia",
+    imageUrl: "./images/slider/9.png"
+},
+{
+    title: "Viaje combinado a Tailandia y Maldivas",
+    paragraph: "Desde 999€ con vuelos, hotel y guia",
+    imageUrl: "./images/slider/10.png"
+},
+{
+    title: "Viaje a Seychelles en hoteles de 5 estrellas",
+    paragraph: "Desde 999€ con vuelos, hotel y guia",
+    imageUrl: "./images/slider/11.png"
+},
+{
+    title: "Luna de miel en Sri Lanka e islas Maldivas",
     paragraph: "Desde 999€ con vuelos, hotel y guia",
     imageUrl: "./images/slider/12.png"
   },
