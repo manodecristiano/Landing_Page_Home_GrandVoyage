@@ -728,9 +728,12 @@ body {
     border-radius: 365px;
     position: relative;
 
-    animation: turn1 25s infinite linear;
-    -webkit-animation: turn1 25s infinite linear;
-    box-shadow: 0px 15px 60px rgba(255, 255, 255, 0.5) inset, 1em 0px 0px rgba(255, 255, 255, 0.1) inset;
+
+    animation: turn2 45s infinite linear;
+    -webkit-animation: turn2 45s infinite linear;
+    box-shadow: 0px 15px 60px rgba(255, 255, 255, 0.1) inset, 1em 0px 0px rgba(255, 255, 255, 0.5) inset;
+
+
 }
 
 .mundo:hover {
@@ -746,9 +749,10 @@ body {
 
 .america {
     background: url('../images/mapa/america.png') repeat-x 0 0;
-    animation: turn2 25s infinite linear;
-    -webkit-animation: turn2 25s infinite linear;
-    box-shadow: 0px 15px 60px rgba(255, 255, 255, 0.1) inset, 1em 0px 0px rgba(255, 255, 255, 0.5) inset;
+    animation: turn1 45s infinite linear;
+    -webkit-animation: turn1 45s infinite linear;
+    box-shadow: 0px 15px 60px rgba(255, 255, 255, 0.5) inset, 1em 0px 0px rgba(255, 255, 255, 0.1) inset;
+
 }
 
 .asia {
@@ -757,9 +761,9 @@ body {
 
 .europa {
     background: url('../images/mapa/europa.png') repeat-x 0 0;
-    animation: turn2 25s infinite linear;
-    -webkit-animation: turn2 25s infinite linear;
-    box-shadow: 0px 15px 60px rgba(255, 255, 255, 0.1) inset, 1em 0px 0px rgba(255, 255, 255, 0.5) inset;
+    animation: turn1 45s infinite linear;
+    -webkit-animation: turn1 45s infinite linear;
+    box-shadow: 0px 15px 60px rgba(255, 255, 255, 0.5) inset, 1em 0px 0px rgba(255, 255, 255, 0.1) inset;
 }
 
 .oriente {
@@ -827,21 +831,20 @@ body {
 @keyframes turn2 {
     0% {
         background-position: 0 0;
-    }
-
-    5% {
         box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.5) inset, 25em 0px 80px rgba(0, 0, 0, 0.8) inset;
-    }
 
+    }
 
     50% {
         background-position: -365px 0;
+        box-shadow: none;
 
     }
 
 
     100% {
         background-position: -727px 0;
+        box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.5) inset, 25em 0px 80px rgba(0, 0, 0, 0.8) inset;
 
     }
 }
@@ -850,23 +853,22 @@ body {
 
     0% {
         background-position: 0 0;
-
-    }
-
-    5% {
         box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.5) inset, 25em 0px 80px rgba(0, 0, 0, 0.8) inset;
+
+
     }
 
 
     50% {
         background-position: -365px 0;
+        box-shadow: none;
 
     }
 
 
-
     100% {
-        background-position: -727px 0
+        background-position: -727px 0;
+        box-shadow: 0px 15px 20px rgba(255, 255, 255, 0.5) inset, 25em 0px 80px rgba(0, 0, 0, 0.8) inset;
     }
 }
 
