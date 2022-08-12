@@ -663,7 +663,7 @@ body {
 }
 
 .carousel__image {
-
+    cursor: pointer;
     border: none;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1419,6 +1419,7 @@ body {
         width: 100%;
         margin-top: 15%;
         margin-right: 4%;
+        margin-left: 4%;
         font-family: 'DM';
         font-size: 1rem;
     }
@@ -1433,7 +1434,7 @@ body {
     }
 
     .about__element {
-        width: 355px;
+        width: 390px;
     }
 
     .about__element__reverse {
@@ -1550,6 +1551,10 @@ body {
         width: 60px;
         height: 38px;
         top: 39px
+    }
+
+    .planify__title {
+        font-size: 0.9rem
     }
 
     .planify__button {
