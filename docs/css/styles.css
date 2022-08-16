@@ -112,7 +112,7 @@ body {
      ========================================================================== */
 .hero__container {
 
-    margin-top: 140px;
+    margin-top: 55px;
     max-height: 600px;
     max-width: 800px;
     --padding-custom_property: 0;
@@ -126,7 +126,7 @@ body {
 
 .hero__title {
 
-    margin-top: 30px;
+    margin-bottom: 40px;
     font-size: 3rem;
     padding-left: 20%;
     padding-right: 20%;
@@ -182,7 +182,7 @@ body {
     display: flex;
     text-align: center;
     justify-content: center;
-    padding: 0;
+    --padding-custom_property: 50px 30px;
 }
 
 .about__main {
@@ -210,7 +210,15 @@ body {
     display: flex;
     text-align: center;
     border-radius: 10px;
+    width: 319px;
+}
+
+.about__element__reverse {
+    display: flex;
+    text-align: center;
+    border-radius: 10px;
     width: 300px;
+
 }
 
 .about__text {
@@ -225,22 +233,16 @@ body {
 }
 
 .about__paragrahp {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     color: darkgrey;
 }
 
-.about__element__reverse {
-    display: flex;
-    text-align: center;
-    border-radius: 10px;
-    width: 300px;
-}
 
 .about__text__reverse {
-    text-align: left;
+    text-align: center;
     width: 100%;
     margin-top: 15%;
-    margin-left: 15%;
+    margin-left: 5%;
     font-family: 'DM';
     font-size: 1rem;
 }
@@ -259,7 +261,7 @@ body {
 
 .popular__subtitle {
     font-family: 'DM';
-    font-size: 1.7rem;
+    font-size: 2rem;
     margin-bottom: 25px;
     text-align: center;
 
@@ -322,7 +324,7 @@ body {
 
 .popular__features {
     margin-top: 2px;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
 }
 
 .popular__items {
@@ -403,7 +405,7 @@ body {
 }
 
 .guia__title__paragrahp {
-    font-size: 1rem;
+    font-size: 1.3rem;
     color: black;
     margin: 50px;
     text-align: left;
@@ -417,7 +419,7 @@ body {
 
 .guia__paragrahp {
     font-weight: bold;
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: black;
     justify-content: center;
     align-items: center;
@@ -712,6 +714,9 @@ body {
 
 /* PLANIFY
      ========================================================================== */
+.planify {
+    margin-top: 30px;
+}
 
 .planify__title {
     font-family: "DM";
@@ -721,14 +726,83 @@ body {
     margin-bottom: -33px;
 }
 
+
+.planify__table__world {
+
+    margin-top: 80px;
+    margin-bottom: 49px;
+    gap: 1em;
+    justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    align-items: center;
+    /*adaptables sin usare mediaqueri*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.planify__subtitle {
+    margin-top: 42px;
+    font-family: "DM";
+    text-align: center;
+    font-size: 1.7rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.planify__table__button {
+    display: none;
+}
+
+.planify__button {
+    font-family: "DM";
+    font-weight: bold;
+    padding: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 30px;
+    border-style: solid;
+    border-width: thin;
+    border-color: lightgray;
+
+}
+
+.planify__button:hover {
+    background-color: #e65023;
+    color: white;
+}
+
+.planify__orange {
+    margin: 0 auto;
+    display: flex;
+    font-size: 1.4rem;
+    padding: 17px;
+    padding-left: 34px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 200;
+    text-align: left;
+    width: 301px;
+    height: 61px;
+    color: white;
+    background-color: #e65023;
+}
+
+.planify__orange:hover {
+    transform: scale(1.10);
+
+}
+
+.planify__button i {
+    margin-left: 60px;
+}
+
 .mundo {
-    background: url('../images/mapa/africa.png') repeat-x 0 0;
     width: 150px;
     height: 150px;
     border-radius: 365px;
     position: relative;
-
-
     animation: turn2 45s infinite linear;
     -webkit-animation: turn2 45s infinite linear;
     box-shadow: 0px 15px 60px rgba(255, 255, 255, 0.1) inset, 1em 0px 0px rgba(255, 255, 255, 0.5) inset;
@@ -741,7 +815,6 @@ body {
 
 }
 
-
 .africa {
     background: url('../images/mapa/africa.png') repeat-x 0 0;
 
@@ -752,7 +825,6 @@ body {
     animation: turn1 45s infinite linear;
     -webkit-animation: turn1 45s infinite linear;
     box-shadow: 0px 15px 60px rgba(255, 255, 255, 0.5) inset, 1em 0px 0px rgba(255, 255, 255, 0.1) inset;
-
 }
 
 .asia {
@@ -770,18 +842,46 @@ body {
     background: url('../images/mapa/orientemedio.png') repeat-x 0 0;
 }
 
+.mundo__white {
+    margin: 5px;
+    width: 150px;
+    height: 150px;
+}
+
+.mundo__white:hover {
+    filter: invert(100%);
+
+}
+
+.europa__white {
+    background: url('../images/mapa/europa_blanco.png') repeat-x 0 0;
+}
+
+.oriente__white {
+    background: url('../images/mapa/oriente_blanco.png') repeat-x 0 0;
+}
+
+.asia__white {
+    background: url('../images/mapa/asia_blanco.png') repeat-x 0 0;
+}
+
+.america__white {
+    background: url('../images/mapa/america_blanco.png') repeat-x 0 0;
+}
+
+.africa__white {
+    background: url('../images/mapa/africa_blanco.png') repeat-x 0 0;
+}
 
 
 
 .mundo__text {
     display: flex;
     font-family: "DM";
-    font-size: 2rem;
-    margin-bottom: 5px;
+    font-size: 1.7rem;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     color: white;
-
     height: 100%;
     text-align: center;
     align-items: center;
@@ -789,9 +889,20 @@ body {
     opacity: 0%
 }
 
+.white {
+    display: block;
+    font-weight: bold;
+    color: #707070;
+    opacity: 100%;
+    margin-top: -40px;
+
+}
+
 .mundo__text:hover {
     cursor: pointer;
     opacity: 100%;
+    color: #1291b8;
+    transform: scale(1.10);
 }
 
 
@@ -873,76 +984,6 @@ body {
 }
 
 
-
-.planify__table__world {
-    padding-top: 11px;
-    gap: 1em;
-    justify-content: center;
-    margin-left: 20px;
-    margin-right: 20px;
-    align-items: center;
-    /*adaptables sin usare mediaqueri*/
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.planify__subtitle {
-    margin-top: 35px;
-    font-family: "DM";
-    text-align: center;
-    font-size: 1.7rem;
-    margin-bottom: 5px;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-.planify__table__button {
-    display: none;
-}
-
-.planify__button {
-    font-family: "DM";
-    font-weight: bold;
-    padding: 12px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 30px;
-    border-style: solid;
-    border-width: thin;
-    border-color: lightgray;
-    background-color: #fff;
-
-}
-
-.planify__button:hover {
-    background-color: #e65023;
-    color: white;
-}
-
-.planify__orange {
-    margin: 0 auto;
-    display: flex;
-    font-size: 1.4rem;
-    padding: 17px;
-    padding-left: 34px;
-    justify-content: center;
-    align-items: center;
-    font-weight: 200;
-    text-align: left;
-    width: 301px;
-    height: 61px;
-    color: white;
-    background-color: #e65023;
-}
-
-.planify__orange:hover {
-    transform: scale(1.10);
-
-}
-
-.planify__button i {
-    margin-left: 60px;
-}
 
 /*REVIEW*/
 .google__review {
@@ -1288,14 +1329,27 @@ body {
     }
 
     .hero__title {
-
+        margin-bottom: 10px;
         font-size: 2rem;
+    }
+
+    .hero__container {
+        margin-top: 145px;
     }
 
     .about__main {
         gap: 2em;
     }
 
+    .about {
+        --padding-custom_property: 0px 0px;
+    }
+
+    .about__text__reverse {
+        margin-right: 5%;
+        margin-left: 15%;
+        text-align: left;
+    }
 
     .popular__container {
         grid-template-columns: 1fr;
