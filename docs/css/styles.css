@@ -357,48 +357,51 @@ body {
     display: flex;
     font-family: 'DM';
     justify-content: center;
-}
 
-.fa-circle-check {
-    color: forestgreen;
-    padding: 10px;
-}
-
-#movil__animated {
-    position: absolute;
-    left: -20%;
-    height: 541px;
-    width: 303px;
-}
-
-#movil__animated2 {
-    position: absolute;
-    right: -20%;
-    height: 541px;
-    width: 303px;
 }
 
 .guia__element__img {
-    display: flex;
-    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
     border-radius: 10px;
 }
 
 .guia__element {
-    margin: 0;
-    display: flex;
     text-align: center;
     border-radius: 10px;
 }
 
 .guia__text {
+    display: block;
     width: 500px;
-    margin-left: 11%;
+    justify-content: center;
+    margin: 0 auto;
 }
+
+.fa-circle-check {
+    color: forestgreen;
+    margin: 2px;
+    margin-right: 10px;
+}
+
+#movil__animated {
+    position: relative;
+    left: -300%;
+    height: 541px;
+    width: 303px;
+}
+
+#movil__animated2 {
+    position: relative;
+    right: -300%;
+    height: 541px;
+    width: 303px;
+}
+
 
 .guia__title {
     margin-left: 35px;
-    text-align: left;
+    text-align: center;
     font-size: 2rem;
     font-weight: bold;
     padding-bottom: 8px;
@@ -407,29 +410,31 @@ body {
 .guia__title__paragrahp {
     font-size: 1.3rem;
     color: black;
-    margin: 50px;
-    text-align: left;
+    margin: 26px 71px 50px 110px;
 }
 
 .guia__text__flex {
-    margin-left: 30px;
     display: flex;
     margin-bottom: 9px;
+    justify-content: left;
+    margin-left: 100px;
+    margin-bottom: 30px;
 }
 
 .guia__paragrahp {
+    display: flex;
     font-weight: bold;
     font-size: 1rem;
     color: black;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+
+
+
 }
 
 .banner__internet {
     justify-content: center;
     margin-bottom: 125px;
-    margin-top: 20px;
+    margin-top: -100px;
     display: flex;
 }
 
@@ -1126,13 +1131,6 @@ body {
 /* 1700 MEDIA
      ========================================================================== */
 @media (max-width:1700px) {
-    #movil__animated2 {
-        display: none
-    }
-
-    #movil__animated {
-        display: none
-    }
 
     .slide-content {
         border-radius: 0px;
@@ -1533,49 +1531,45 @@ body {
     }
 
     .guia__element {
-        width: 50%;
-        margin-left: 51%;
+
         margin-top: 50px;
     }
 
-    #movil__animated {
-        display: inline;
-        left: -900px;
-        height: 500px;
-        width: 300px;
-        top: -30px
+    #movil__animated2 {
+        display: none;
     }
 
     .guia__element__img {
-        position: absolute;
-        height: 50%;
-        width: 65%;
+
+        margin-right: 10%;
     }
 
     .guia__text {
-        margin-left: -10%;
         text-align: left;
-        width: 100%;
+        margin-top: 50px;
     }
 
     .guia__text__flex {
-        margin-left: -16px;
-        margin-bottom: 0px;
+        margin-left: 56px;
+        margin-right: 217px;
+        margin-bottom: 21px;
     }
 
+
+
     .guia__title {
-        margin-left: 0px;
         font-size: 1.5rem;
+        margin-left: 67px;
+        margin-right: 217px;
         text-align: left;
+        padding-bottom: 0px;
     }
 
     .guia__title__paragrahp {
         font-size: 0.8rem;
-        margin-bottom: 20px;
-        margin: 0px;
-        margin-bottom: 18px;
-        margin-right: 22px;
+        margin: 13px 221px 17px 66px;
     }
+
 
     .guia__paragrahp {
         font-size: 0.7rem;
@@ -1585,10 +1579,12 @@ body {
     .banner__internet {
         margin-top: 25%;
         margin-bottom: 10%;
+        margin-top: 0%;
     }
 
     .banner__internet img {
         margin-left: 5px;
+
     }
 
     .slider__title {

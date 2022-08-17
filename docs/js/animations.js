@@ -17,14 +17,14 @@ const tl = gsap.timeline({
 
 
 tl.to(movil,{ 
-        x:700,
+        left:'30%',
         ease:'power1',
         duration:10},
         "-=10");
 
 
  tl.to(movil2,{ 
-         x:-700,
+         right:'30%',
          ease:'power1',
          duration:10},
          "-=10");    
