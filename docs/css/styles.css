@@ -112,7 +112,7 @@ body {
      ========================================================================== */
 .hero__container {
 
-    margin-top: 55px;
+    margin-top: 94px;
     max-height: 600px;
     max-width: 800px;
     --padding-custom_property: 0;
@@ -126,7 +126,7 @@ body {
 
 .hero__title {
 
-    margin-bottom: 40px;
+    margin-bottom: 24px;
     font-size: 3rem;
     padding-left: 20%;
     padding-right: 20%;
@@ -137,9 +137,9 @@ body {
 }
 
 .cta__button {
+    border: none;
     font-family: "DM";
     font-weight: 900;
-
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 30px;
@@ -150,19 +150,27 @@ body {
     padding-left: 34px;
     align-items: center;
     text-align: left;
-
     width: 270px;
     height: 61px;
     color: black;
     background-color: white;
     margin-bottom: 30px;
+    outline: none;
 }
-
 
 .cta__button:hover {
     background-color: #e65023;
-    color: white;
     transform: scale(1.15);
+    cursor: pointer;
+    color: white;
+}
+
+.cta__button:hover>.fa-angle-right {
+    background-color: #e65023;
+    transform: scale(1.15);
+    cursor: pointer;
+    color: white;
+
 }
 
 
@@ -171,9 +179,9 @@ body {
     margin-left: 22px;
 }
 
-.cta__button i:hover {
-    color: white
-}
+
+
+
 
 
 /* ABOUT
@@ -210,31 +218,34 @@ body {
     display: flex;
     text-align: center;
     border-radius: 10px;
-    width: 319px;
+    width: 361px;
 }
 
 .about__element__reverse {
     display: flex;
     text-align: center;
     border-radius: 10px;
-    width: 300px;
+    width: 361px;
 
 }
 
 .about__text {
-    margin-top: 20%;
+    margin-top: 15%;
     font-family: 'DM';
     font-size: 1rem;
+    margin-left: 15px;
 }
 
 .about__title {
     padding-bottom: 8px;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
+    text-align: left;
 }
 
 .about__paragrahp {
     font-size: 0.9rem;
     color: darkgrey;
+    text-align: left;
 }
 
 
@@ -249,6 +260,7 @@ body {
 
 .about__img {
     width: 200px;
+
 }
 
 /* POPULAR
@@ -309,6 +321,7 @@ body {
     border-radius: 10px;
     width: 330px;
     padding: 30px;
+    cursor: pointer;
 
 }
 
@@ -427,8 +440,6 @@ body {
     font-size: 1rem;
     color: black;
 
-
-
 }
 
 .banner__internet {
@@ -534,7 +545,7 @@ body {
     font-weight: bold;
     text-align: center;
     font-size: 1.5rem;
-    margin-left: 2%;
+    margin-left: 0%;
     margin-top: -2%;
 }
 
@@ -682,12 +693,14 @@ body {
 
 
 .carrusel__text {
-    color: darkgrey;
+    color: lightgray;
     text-align: left;
     margin-left: 10%;
+
 }
 
 .carrusel__title {
+    font-weight: normal;
     font-family: 'DM';
     font-size: 1rem;
     padding: 4%;
@@ -699,7 +712,6 @@ body {
 .carrusel__paragrahp {
     font-family: 'DM';
     font-size: 0.7rem;
-    color: darkgrey;
     margin-right: 50px;
     margin-left: 10px;
     margin-top: -5px;
@@ -760,25 +772,15 @@ body {
     display: none;
 }
 
-.planify__button {
+
+.planify__orange {
     font-family: "DM";
     font-weight: bold;
     padding: 12px;
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 30px;
-    border-style: solid;
-    border-width: thin;
-    border-color: lightgray;
-
-}
-
-.planify__button:hover {
-    background-color: #e65023;
-    color: white;
-}
-
-.planify__orange {
+    border: none;
     margin: 0 auto;
     display: flex;
     font-size: 1.4rem;
@@ -792,6 +794,7 @@ body {
     height: 61px;
     color: white;
     background-color: #e65023;
+    cursor: pointer;
 }
 
 .planify__orange:hover {
@@ -1042,7 +1045,7 @@ body {
     justify-content: space-between;
     align-items: center;
     /*linea*/
-    border-bottom: 3px solid #e65023;
+    border-bottom: 3px solid #a3a09f;
     padding-bottom: 60px;
 }
 
@@ -1072,7 +1075,7 @@ body {
 }
 
 .footer__input {
-    background-color: lemonchiffon;
+    background-color: lightgray;
     height: 50px;
     display: block;
     padding-left: 10px;
@@ -1097,7 +1100,7 @@ body {
 }
 
 .footer__copy {
-    width: 50%;
+    width: 60%;
     --padding-container: 30px 0;
     text-align: center;
     color: lightgray;
@@ -1112,8 +1115,14 @@ body {
 
 .fa-brands {
     font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: gray;
+    margin: 10px;
+    color: #e65023;
+    cursor: pointer;
+}
+
+.fa-brands:hover {
+    transform: scale(1.80);
+    filter: url('#teal-lightgreen')
 }
 
 .footer__img {
@@ -1124,6 +1133,7 @@ body {
     color: grey;
     text-decoration: none;
 }
+
 
 
 
@@ -1202,9 +1212,6 @@ body {
         margin-top: 3%;
 
     }
-
-
-
 
 }
 
@@ -1291,7 +1298,8 @@ body {
     /*el menu existe por delante de todo pero tien la opacidad a 0 */
     .nav__link--menu {
         position: fixed;
-        background-color: rgba(0, 0, 0, 0.955);
+        background-image: linear-gradient(180deg, #27262616 0%, #000000c8 50%), url('../images/fondo_carrusel_1.png');
+        background-size: cover;
         top: 0;
         margin-left: -5%;
         height: 100%;
@@ -1309,7 +1317,8 @@ body {
     .nav__links {
         font-family: 'DM';
         font-weight: bold;
-        color: #e65023;
+        color: white;
+        font-size: 2rem;
     }
 
     .nav__link--show {
@@ -1344,8 +1353,8 @@ body {
     }
 
     .about__text__reverse {
-        margin-right: 5%;
-        margin-left: 15%;
+        margin-right: 0%;
+        margin-left: 19%;
         text-align: left;
     }
 
@@ -1452,12 +1461,29 @@ body {
         font-size: 1rem;
     }
 
+    #about__img__1 {
+        margin-left: -30px;
+    }
+
+    #about__img__2 {
+        margin-right: -24px
+    }
+
+    #about__img__3 {
+        margin-left: 24px
+    }
+
     .about {
         width: 100%;
     }
 
     .about__main {
         padding-top: 0px;
+    }
+
+    .about__img {
+        width: 188px;
+        height: 179px;
     }
 
     .about__table {
@@ -1470,19 +1496,25 @@ body {
         text-align: left;
         width: 100%;
         margin-top: 15%;
-        margin-right: 4%;
-        margin-left: 4%;
+        margin-right: 0%;
+        margin-left: 2%;
         font-family: 'DM';
         font-size: 1rem;
     }
 
     .about__title {
         padding-bottom: 8px;
+        font-size: 1.2rem;
     }
 
     .about__paragrahp {
         font-size: 0.9rem;
         color: darkgrey;
+        margin-right: 51px;
+    }
+
+    #about__paragrahp__2 {
+        margin-right: 17px;
     }
 
     .about__element {
@@ -1495,14 +1527,11 @@ body {
         flex-direction: row-reverse;
     }
 
-    .about__img {
-        width: 200px;
-    }
 
     .popular__subtitle {
         text-align: left;
         font-size: 1.8rem;
-        margin-right: 35%;
+        margin-right: 30%;
         margin-left: 13%;
     }
 
@@ -1540,7 +1569,6 @@ body {
     }
 
     .guia__element__img {
-
         margin-right: 10%;
     }
 
@@ -1555,12 +1583,10 @@ body {
         margin-bottom: 21px;
     }
 
-
-
     .guia__title {
         font-size: 1.5rem;
         margin-left: 67px;
-        margin-right: 217px;
+        margin-right: 278px;
         text-align: left;
         padding-bottom: 0px;
     }
