@@ -38,13 +38,50 @@
             <ul class="nav__link nav__link--menu">
 
                 <li class="nav__items">
-                    <a href="#" class="nav__links">Contacto</a>
+                    <div class="nav__contact__dropdown">
+                        <a class="nav__links">Contacto</a>
+                        <div class="nav__contact__dropdown-content">
+
+                            <div class="footer__inputs ">
+
+                                <input type="email" placeholder="Email:"
+                                    class="nav__contact__input__text nav__contact__input__email" name="_replyto">
+                                <input type="submit" value="Enviar" class="nav__contact__submit">
+
+                            </div>
+
+                            <div class="footer__inputs">
+                                <input type="text" placeholder="escribe tu mensaje" class="nav__contact__input__text"
+                                    name="_replyto">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </li>
+
+
+                <li class="nav__items">
+                    <div class="nav__blog__dropdown">
+                        <a href="https://blog.grandvoyage.com/" class="nav__links">Blog</a>
+                        <div class="nav__blog__dropdown-content">
+                            <a href='https://blog.grandvoyage.com/'>
+                                <img src="./images/blog.png" alt="Blog de GrandVoyage">
+                            </a>
+                        </div>
+                    </div>
                 </li>
                 <li class="nav__items">
-                    <a href="#" class="nav__links">Blog</a>
-                </li>
-                <li class="nav__items">
-                    <a href="#" class="nav__links">Podcast</a>
+                    <div class="nav__podcast__dropdown">
+                        <a href="https://grandvoyage.com/traveltech/" class="nav__links dropdown">Podcast</a>
+
+                        <div class="nav__podcast__dropdown-content" id="podcast">
+                            <!--se ejecuta podcast_generate.js -->
+
+
+                        </div>
+                    </div>
                 </li>
                 <li class="nav__items">
                     <a href="#" class="nav__links">Acerca de</a>
@@ -164,9 +201,7 @@
 
 
         <div class="banner__internet">
-
             <img src="./images/nowifi.svg" class="guia__img" alt="imagen de moviles">
-
             <p class="banner__paragrahp"> Funciona incluso sin conexión a internet</p>
         </div>
 
@@ -244,13 +279,14 @@
 
 
 
+            <div class="planify__fade__in">
 
-            <h2 class="planify__subtitle">¿No lo tienes claro?</h2>
+                <h2 class="planify__subtitle">¿No lo tienes claro?</h2>
 
-            <button class="planify__button planify__orange">Te asesoramos <i
-                    class="fa-solid fa-angle-right"></i></button>
+                <button class="planify__button planify__orange">Te asesoramos <i
+                        class="fa-solid fa-angle-right"></i></button>
 
-
+            </div>
 
         </section>
 
@@ -319,6 +355,7 @@
 
     <script src="js/swiper-bundle.min.js"></script>
 
+    <script src="js/podcast__generate.js"></script>
     <script src="js/carrusel__generate.js"></script>
     <script src="js/popular__generate.js"></script>
     <script src="js/slider__generate.js"></script>
