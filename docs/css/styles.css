@@ -554,10 +554,19 @@ body {
 }
 
 #movil__animated2 {
+    opacity: 0;
     position: relative;
     right: -300%;
     height: 541px;
     width: 303px;
+}
+
+#movil__animated3 {
+    position: absolute;
+    display: none;
+    right: -50%;
+    height: 500px;
+    width: 550px;
 }
 
 
