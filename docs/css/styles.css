@@ -27,6 +27,7 @@
 
 body {
     font-family: 'Jakarta', Semibold;
+
 }
 
 .container {
@@ -562,9 +563,10 @@ body {
 }
 
 #movil__animated3 {
+    display: inherit;
     position: absolute;
-    display: none;
-    right: -50%;
+    margin-top: -20%;
+    margin-left: 155%;
     height: 500px;
     width: 550px;
 }
@@ -1345,6 +1347,9 @@ body {
         flex-wrap: wrap;
     }
 
+    #movil__animated3 {
+        display: none;
+    }
 
     .swiper-navBtn::before,
     .swiper-navBtn::after {
@@ -1671,11 +1676,15 @@ body {
     }
 
     .guia__element {
-
+        margin-left: 25px;
         margin-top: 50px;
     }
 
     #movil__animated2 {
+        display: none;
+    }
+
+    #movil__animated3 {
         display: none;
     }
 
