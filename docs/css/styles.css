@@ -72,7 +72,6 @@ body {
 
 .nav__items {
     list-style: none;
-
 }
 
 .nav__logo {
@@ -184,10 +183,11 @@ body {
 
 
 .nav__blog__dropdown-content {
+
+    border-radius: 00px 20px 20px 20px;
     overflow: scroll;
     display: none;
     position: absolute;
-    border-radius: 0px 20px 20px 20px;
     width: 300px;
     height: 400px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -356,7 +356,8 @@ body {
 .about__table {
 
     max-width: 1200px !important;
-    gap: 2.5em;
+
+    gap: 1.5em;
     justify-content: center;
     align-items: center;
     /*adaptables sin usar mediaqueris*/
@@ -1254,6 +1255,18 @@ body {
 /* 1700 MEDIA
      ========================================================================== */
 @media (max-width:1700px) {
+    .nav__contact__dropdown-content {
+        height: fit-content;
+        background-color: #333;
+        left: 8%;
+        width: fit-content;
+        border-radius: 20px 20px 20px 0px;
+    }
+
+    .nav__blog__dropdown-content {
+        right: 14%;
+        border-radius: 20px 20px 20px 20px;
+    }
 
     .slide-content {
         border-radius: 0px;
@@ -1331,6 +1344,8 @@ body {
 /* 934 MEDIA
      ========================================================================== */
 @media (max-width:934px) {
+
+
     .planify__table__world {
         display: none;
     }
@@ -1345,6 +1360,7 @@ body {
         /*adaptables sin usare mediaqueri*/
         display: flex;
         flex-wrap: wrap;
+
     }
 
     #movil__animated3 {
@@ -1413,21 +1429,22 @@ body {
 
     /*el menu existe por delante de todo pero tien la opacidad a 0 */
     .nav__link--menu {
-        position: fixed;
+        position: absolute;
         background-image: linear-gradient(180deg, #27262616 0%, #000000c8 50%), url('../images/fondo_carrusel_1.png');
         background-size: cover;
         top: 0;
-        margin-left: -5%;
-        height: 100%;
+        right: 0%;
+        height: 13%;
         width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
         z-index: 100;
         opacity: 0;
         pointer-events: none;
-        transition: .7s opacity;
+        transition: .15s opacity;
+        border-radius: 0px 0px 0px 354px;
     }
 
     .nav__links {
@@ -1520,7 +1537,6 @@ body {
     }
 
     .nav__link--footer {
-
         width: 100%;
         justify-content: space-evenly;
         margin: 0;
