@@ -45,6 +45,7 @@ let opinions= [
 },
 ];
 
+
 const carrusel_div = document.getElementById("carousel__wrapper");
 let item__carrusel="";
 function showDivByDiv() {
